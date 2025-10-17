@@ -1,1 +1,1 @@
-# lakbay-rover-mechanical-manipulato
+# lakbay-rover-mechanical-manipulator
