@@ -313,6 +313,44 @@ idf.py build
 
 ```
 
+### Create a ROS 2 Workspace
+
+```bash
+mkdir -p ~/robot_controller/sr
+
+cd ~/robot_controller/src
+```
+
+### Add the robot_description Package
+
+Move the robot_description folder into the src directory:
+Your workspace structure should look like this:
+
+robot_controller/
+└── src/
+    └── robot_description/
+        ├── urdf/
+        ├── launch/
+        ├── meshes/
+        ├── config/
+        └── package.xml
+        
+### Build the Workspace
+```bash
+cd ~/robot_controller
+
+colcon build --symlink-install
+```
+
+
+### Source the Workspace
+After a successful build:
+```bash
+source ~/robot_controller/robot_description/install/setup.bash
+```
+
+ros2 launch robot_description display.launch.py
+
 ## Usage
 
 1. Flash the firmware to the ESP32-S3 using ESP-IDF.
@@ -323,7 +361,16 @@ ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888 -v6
 ```
 
 3. Power the ESP32-S3 and verify connection.
-4. Use ROS 2 tools (ros2 topic list, RViz, custom nodes) to control the manipulator.
+4. Launch the Robot Controller and Model in RViz.
+
+```bash
+ros2 launch robot_description display.launch.py
+```
+This will:
+
+* Load the robot URDF
+* Open RViz with the manipulator model displayed
+* Load the controllers
 
 ## Troubleshooting
 
