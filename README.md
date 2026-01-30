@@ -37,7 +37,7 @@ The ESP32-S3 acts as a real-time embedded controller, directly interfacing with 
 
 Communication between the embedded system and ROS 2 is achieved through a Micro-ROS Agent, enabling reliable DDS-based messaging over UDP Ethernet.
 
-
+```markdown
 ┌────────────────────┐
 │   USB Joystick     │
 └─────────┬──────────┘
@@ -58,7 +58,7 @@ Communication between the embedded system and ROS 2 is achieved through a Micro-
 │  ─────────────────────────   │
 │  • FreeRTOS                  │
 │  • Micro-ROS Client          │
-│  • Ethernet Interface        │    │
+│  • Ethernet Interface        │   
 └─────────┬────────────────────┘
           │ CAN BUS
           ▼
@@ -66,7 +66,7 @@ Communication between the embedded system and ROS 2 is achieved through a Micro-
 │     6-DOF Robot Arm          │
 │  (Motors, Encoders, Sensors) │
 └──────────────────────────────┘
-
+```
 
 
 
