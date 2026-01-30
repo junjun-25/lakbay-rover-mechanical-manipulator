@@ -340,6 +340,12 @@ ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888 -v6
   * Confirm ESP-IDF version is v5.x
 
   * Run idf.py fullclean before rebuilding
+ 
+
+
+https://github.com/user-attachments/assets/c62c71a4-ae30-43b2-b577-fd333899c85b
+
+
 
 ## References
 
