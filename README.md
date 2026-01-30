@@ -13,7 +13,7 @@ make -f libmicroros.mk clean <br>
 
 cd network_interfaces <br>
 
-then replace the  uros_ethernet_netif.c with: <br>
+then replace the code in the uros_ethernet_netif.c with: <br>
 
 ```c
 
