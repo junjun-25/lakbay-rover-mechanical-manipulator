@@ -332,16 +332,13 @@ ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888 -v6
 
   * Check Ethernet wiring or SPI Ethernet module
 
-Ensure the Micro-ROS agent is running first
+  * Ensure the Micro-ROS agent is running first
 
-Build errors
+* Build errors
 
-Confirm ESP-IDF version is v5.x
+  * Confirm ESP-IDF version is v5.x
 
-Run idf.py fullclean before rebuilding
+  * Run idf.py fullclean before rebuilding
 
-No ROS topics
+## References
 
-Ensure IP and port match the agent
-
-Check firewall settings on the PC
