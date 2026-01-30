@@ -274,7 +274,25 @@ esp_err_t uros_network_interface_initialize(void)
 
    * Ensure the IP addresses match your network.
 
-then edit this section of CmakeLists.txt inside the micro_ros_espidf_components <br>
+
+###Return to the Main Project Directory
+
+```bash
+cd ../..
+```
+
+### Open the Project in VS Code
+
+```bash
+code .
+```
+Open the ESP-IDF Terminal inside VS Code. <br>
+
+### Edit CMakeLists.txt
+
+Navigate through the following file then edit it:
+
+micro_ros_espidf_component/CMakeLists.txt
 
 ```cmake
 
@@ -283,16 +301,47 @@ idf_component_register(SRCS ${COMPONENT_SRC}
                        REQUIRES nvs_flash esp_wifi esp_eth esp_netif lwip driver)
 ```
 
-cd ../.. or go back with the Mechanical manipulator directory <br>
+### Build the Project
+Run the following commands in order:
 
-
-then run the ff:
-
-code .
-
-vscode will open then open the esp-idf terminal then run the following commands:
-
-idf.py add-dependency "espressif/esp-dsp" <br>
-idf.py fullclean <br>
-idf.py reconfigure <br>
+```bash
+idf.py add-dependency "espressif/esp-dsp"
+idf.py fullclean
+idf.py reconfigure
 idf.py build
+
+```
+
+## Usage
+
+1. Flash the firmware to the ESP32-S3 using ESP-IDF.
+
+2. Start the Micro-ROS Agent on your PC:
+```bash
+ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888 -v6
+```
+
+3. Power the ESP32-S3 and verify connection.
+4. Use ROS 2 tools (ros2 topic list, RViz, custom nodes) to control the manipulator.
+
+## Troubleshooting
+
+* ESP32 not connecting
+
+  * Verify static IP configuration
+
+  * Check Ethernet wiring or SPI Ethernet module
+
+Ensure the Micro-ROS agent is running first
+
+Build errors
+
+Confirm ESP-IDF version is v5.x
+
+Run idf.py fullclean before rebuilding
+
+No ROS topics
+
+Ensure IP and port match the agent
+
+Check firewall settings on the PC
