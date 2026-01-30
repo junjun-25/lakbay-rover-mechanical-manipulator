@@ -1,6 +1,6 @@
 # LAKBAY: Micro-ROS on ESP32-S3 for Mechanical Manipulator
 
-This repository contains the firmware and setup instructions for running **Micro-ROS** on an **ESP32-S3** to control the LAKBAY 6-DOF mechanical manipulator. It allows the ESP32-S3 to communicate with a ROS 2 system using a **Micro-ROS Agent**, enabling remote control, telemetry, and sensor integration.
+This repository contains the firmware and setup instructions for running **Micro-ROS** on an **ESP32-S3** to control the LAKBAY 6-DOF mechanical manipulator. It allows the ESP32-S3 to communicate with a ROS 2 system using a **Micro-ROS Agent**, enabling realtime control, telemetry, and sensor integration.
 
 > ⚠️ Note: ESP32 (non-S3) may work, but this guide is tested on ESP32-S3.
 
