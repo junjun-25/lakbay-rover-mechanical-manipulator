@@ -361,7 +361,8 @@ ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888 -v6
 ```
 
 3. Power the ESP32-S3 and verify connection.
-4. Launch the Robot Controller and Model in RViz.
+4. Plug in a USB Joystick on your pc.
+5. Launch the Robot Controller and Model in RViz.
 
 ```bash
 ros2 launch robot_description display.launch.py
