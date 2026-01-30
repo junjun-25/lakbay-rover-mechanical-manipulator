@@ -1,9 +1,54 @@
-esp32-s3 was use, idk if esp32 will work but u can try
+# LAKBAY: Micro-ROS on ESP32-S3 for Mechanical Manipulator
 
-requirements: <br>
-esp-idf v5.x <br>
-ROS2 Jazzy Jalisco <br>
-micro-ros agent <br> 
+This repository contains the firmware and setup instructions for running **Micro-ROS** on an **ESP32-S3** to control the LAKBAY 6-DOF mechanical manipulator. It allows the ESP32-S3 to communicate with a ROS 2 system using a **Micro-ROS Agent**, enabling remote control, telemetry, and sensor integration.
+
+> ⚠️ Note: ESP32 (non-S3) may work, but this guide is tested on ESP32-S3.
+
+---
+
+## Table of Contents
+
+1. [Requirements](#requirements)  
+2. [Project Overview](#project-overview)  
+3. [Setup Instructions](#setup-instructions)  
+   - [Clone the Repository](#clone-the-repository)  
+   - [Clone Micro-ROS Component](#clone-micro-ros-component)  
+   - [Clean Micro-ROS Library](#clean-micro-ros-library)  
+   - [Replace Network Interface](#replace-network-interface)  
+   - [Build and Flash ESP32-S3](#build-and-flash-esp32-s3)  
+   - [Run Micro-ROS Agent](#run-micro-ros-agent)  
+   - [Verify Connection](#verify-connection)  
+4. [Usage](#usage)  
+5. [Troubleshooting](#troubleshooting)  
+6. [References](#references)  
+
+---
+
+## Requirements
+
+- **ESP32-S3 development board**  
+- **ESP-IDF v5.x** ([Installation Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/get-started/index.html))  
+- **ROS 2 Jazzy Jalisco** ([Installation Guide](https://docs.ros.org/en/jazzy/Installation.html))  
+- **Micro-ROS Agent** ([Installation Guide](https://micro.ros.org/docs/tutorials/core/first_application_linux/))  
+
+Optional: USB-to-Ethernet adapter if using Ethernet on the ESP32-S3.
+
+---
+
+## Project Overview
+
+The ESP32-S3 firmware connects to a ROS 2 network using **Micro-ROS**. The workflow is:
+
+ESP32-S3 (Micro-ROS Client)
+│
+▼
+Micro-ROS Agent (PC)
+│
+▼
+ROS 2 Network
+│
+▼
+RViz / Control Nodes
 
 
 clone this repo <br>
