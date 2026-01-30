@@ -326,6 +326,7 @@ cd ~/robot_controller/src
 Move the robot_description folder into the src directory:
 Your workspace structure should look like this:
 
+```text
 robot_controller/
 └── src/
     └── robot_description/
@@ -334,7 +335,8 @@ robot_controller/
         ├── meshes/
         ├── config/
         └── package.xml
-        
+```
+
 ### Build the Workspace
 ```bash
 cd ~/robot_controller
