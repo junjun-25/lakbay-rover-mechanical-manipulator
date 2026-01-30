@@ -23,7 +23,8 @@ It enables the ESP32-S3 to communicate with a ROS 2 system using a **Micro-ROS A
 
 ## Requirements
 
-- **ESP32-S3 development board**  
+- **ESP32-S3 development board**
+- **Ubuntu 24.04.x LTS** ([Installation Guide](https://ubuntu.com/download/desktop))  
 - **ESP-IDF v5.x** ([Installation Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/get-started/index.html))  
 - **ROS 2 Jazzy Jalisco** ([Installation Guide](https://docs.ros.org/en/jazzy/Installation.html))  
 - **Micro-ROS Agent** ([Installation Guide](https://micro.ros.org/docs/tutorials/core/first_application_linux/))  
