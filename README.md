@@ -31,7 +31,7 @@ It enables the ESP32-S3 to communicate with a ROS 2 system using a **Micro-ROS A
 
 ## Project Overview
 
-This project provides the firmware, ROS 2 packages, and system integration required to control the Lakbay Rover 6-DOF Mechanical Manipulator using an ESP32-S3 running Micro-ROS.
+This project provides the firmware, ROS 2 packages, and system integration required to control a 6-DOF Mechanical Manipulator using an ESP32-S3 running Micro-ROS.
 
 The ESP32-S3 acts as a real-time embedded controller, directly interfacing with motors and sensors, while a ROS 2 Jazzy system running on a PC handles higher-level control, visualization, and user interaction.
 
