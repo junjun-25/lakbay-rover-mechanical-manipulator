@@ -208,3 +208,6 @@ idf.py reconfigure
 in the project directory run:
 
 idf.py add-dependency "espressif/esp-dsp"
+
+
+then build the project
