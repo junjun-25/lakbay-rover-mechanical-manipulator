@@ -1,3 +1,5 @@
+esp32-s3 was use, idk if esp32 will work but u can try
+
 requirements: <br>
 esp-idf v5.x <br>
 
