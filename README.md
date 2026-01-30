@@ -33,16 +33,17 @@ It enables the ESP32-S3 to communicate with a ROS 2 system using a **Micro-ROS A
 
 The ESP32-S3 firmware connects to a ROS 2 network using **Micro-ROS**. The workflow is:
 
-ESP32-S3 (Micro-ROS Client)
-            │
-            ▼
-   Micro-ROS Agent (PC)
-            │
-            ▼
-        ROS 2 Network
-            │
-            ▼
-     RViz / Control Nodes
+ESP32-S3 (Micro-ROS Client)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▼  
+Micro-ROS Agent (PC)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▼  
+ROS 2 Network  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▼  
+RViz / Control Nodes
+
 
 
 
