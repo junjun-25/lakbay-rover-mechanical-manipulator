@@ -31,7 +31,6 @@ This repository contains the firmware and setup instructions for running **Micro
 - **ROS 2 Jazzy Jalisco** ([Installation Guide](https://docs.ros.org/en/jazzy/Installation.html))  
 - **Micro-ROS Agent** ([Installation Guide](https://micro.ros.org/docs/tutorials/core/first_application_linux/))  
 
-Optional: USB-to-Ethernet adapter if using Ethernet on the ESP32-S3.
 
 ---
 
@@ -50,6 +49,24 @@ ROS 2 Network
 ▼
 RViz / Control Nodes
 
+
+Key features:
+
+- Communication with ROS 2 topics and services  
+- Sensor feedback and actuator control  
+- Ethernet or Wi-Fi network support via custom network interface  
+
+---
+
+## Setup Instructions
+
+### Clone the Repository
+
+Open a terminal and run:
+
+```bash
+git clone <your-repo-url>
+cd lakbay-mechanical-manipulator/Mechanical\ manipulator/components
 
 clone this repo <br>
 then in terminal run: <br>
