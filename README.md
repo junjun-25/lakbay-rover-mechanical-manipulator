@@ -10,7 +10,8 @@ cd network_interfaces
 
 then replace the  uros_ethernet_netif.c with:
 
-```
+```c
+
 #include <stdio.h>
 #include <string.h>
 #include "freertos/FreeRTOS.h"
@@ -189,7 +190,8 @@ esp_err_t uros_network_interface_initialize(void)
 
 then edit the section of CmakeLists.txt inside the micro_ros_espidf_components
 
-```
+```cmake
+
 idf_component_register(SRCS ${COMPONENT_SRC}
                        INCLUDE_DIRS "network_interfaces"
                        REQUIRES nvs_flash esp_wifi esp_eth esp_netif lwip driver)
