@@ -1,19 +1,19 @@
-clone the repo
-then in terminal run:
+clone the repo <br>
+then in terminal run: <br>
 
-cd /lakbay-rover-mechanical-manipulator/Mechanical manipulator/components
+cd /lakbay-rover-mechanical-manipulator/Mechanical manipulator/components <br>
 
-in the components folder run:
+in the components folder run: <br>
 
-git clone https://github.com/micro-ROS/micro_ros_espidf_component.git
+git clone https://github.com/micro-ROS/micro_ros_espidf_component.git <br>
 
-cd micro_ros_espidf_component
+cd micro_ros_espidf_component <br>
 
-make -f libmicroros.mk clean
+make -f libmicroros.mk clean <br>
 
-cd network_interfaces
+cd network_interfaces <br>
 
-then replace the  uros_ethernet_netif.c with:
+then replace the  uros_ethernet_netif.c with: <br>
 
 ```c
 
@@ -193,7 +193,7 @@ esp_err_t uros_network_interface_initialize(void)
 #endif
 ```
 
-then edit the section of CmakeLists.txt inside the micro_ros_espidf_components
+then edit the section of CmakeLists.txt inside the micro_ros_espidf_components <br>
 
 ```cmake
 
@@ -202,7 +202,7 @@ idf_component_register(SRCS ${COMPONENT_SRC}
                        REQUIRES nvs_flash esp_wifi esp_eth esp_netif lwip driver)
 ```
 
-cd ../.. or go back with the Mechanical manipulator directory
+cd ../.. or go back with the Mechanical manipulator directory <br>
 
 
 then run the ff:
@@ -211,7 +211,7 @@ code .
 
 vscode will open then open the esp-idf terminal then run the following commands:
 
-idf.py add-dependency "espressif/esp-dsp"
-idf.py fullclean
-idf.py reconfigure
+idf.py add-dependency "espressif/esp-dsp" <br>
+idf.py fullclean <br>
+idf.py reconfigure <br>
 idf.py build
