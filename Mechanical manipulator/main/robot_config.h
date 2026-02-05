@@ -6,9 +6,10 @@
 // === ROBOT CONFIGURATION PARAMETERS
 // ====================================================
 #define DOF 6
+#define JOINT_COUNT 6
 
 // ==================================================
-// ===== LINK LENGTH ======
+// ======== LINK LENGTH ==============================
 #define a1 100.0f
 #define a2 500.0f
 #define a3 500.0f
@@ -21,12 +22,11 @@
 
 
 // =========================================
-// === Numerical IK Refinement (LM) =======
+// =========== MODE SELECTION ==============
 // =========================================
-#define MAX_ITER 30
-#define POS_TOL  0.5f  
-#define ORI_TOL  0.01f
-#define ALPHA    1.0f 
+#define MODE_TWIST 0
+#define MODE_JOINT_JOG 1
+#define MODE_HOMING 2
 
 
 // ============================================
@@ -50,8 +50,6 @@ static const float q_max[DOF] = {
      100.0f * ((float)M_PI / 180.0f),
      180.0f * ((float)M_PI / 180.0f)
 };
-
-
 
 
 
