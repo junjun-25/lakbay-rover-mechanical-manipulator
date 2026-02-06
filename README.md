@@ -22,7 +22,7 @@ It enables the ESP32-S3 to communicate with a ROS 2 ecosystem using a **Micro-RO
 ## Requirements
 
 - **ESP32-S3 development board**
-- **Ubuntu 24.04.x LTS** ([Installation Guide](https://ubuntu.com/download/desktop))  
+- **Ubuntu 22.04.x LTS**  24.04.x wont work, have some gcc compiler and python environment bug([Installation Guide](https://ubuntu.com/download/desktop))  
 - **ESP-IDF v5.x VS code extension** 
 - **ROS 2 Jazzy Jalisco** ([Installation Guide](https://docs.ros.org/en/jazzy/Installation.html))  
 - **Micro-ROS Agent** ([Installation Guide](https://micro.ros.org/docs/tutorials/core/first_application_linux/))  
@@ -32,7 +32,7 @@ It enables the ESP32-S3 to communicate with a ROS 2 ecosystem using a **Micro-RO
 ## Project Overview
 
 This project provides the firmware, ROS 2 packages, and system integration required to control a 6-DOF Mechanical Manipulator using an ESP32-S3 running Micro-ROS.
-
+s 
 The ESP32-S3 acts as a real-time controller, directly interfacing with motors and sensors, while a ROS 2 Jazzy system running on a PC handles higher-level control, visualization, and user interaction.
 
 Communication between the embedded system and ROS 2 is achieved through a Micro-ROS Agent, enabling reliable DDS-based messaging over UDP Ethernet.
