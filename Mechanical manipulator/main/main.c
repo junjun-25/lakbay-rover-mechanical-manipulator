@@ -648,7 +648,7 @@ void app_main(void)
         esp32_serial_open,
         esp32_serial_close,
         esp32_serial_write,
-        esp32_serial_readone note
+        esp32_serial_read
     );
     #elif defined(CONFIG_MICRO_ROS_ESP_NETIF_WLAN) || defined(CONFIG_MICRO_ROS_ESP_NETIF_ENET)
         ESP_ERROR_CHECK(uros_network_interface_initialize());
